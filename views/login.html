@@ -24,24 +24,35 @@
       <p class="descuentos">Descuentos 20%</p>
     </header>
     <div class="loghead">
-      <a href="../index.html"><img class="logo" src="../img/logo 1.svg" height="65" alt="logo" /></a>
+      <a href="../index.html" class="logo"
+        ><img src="../img/logo 1.svg" height="65" alt="logo"
+      /></a>
       <h1 class="blue-white">Nombre de la tienda</h1>
     </div>
     <nav>
       <ul type="none">
         <li><a class="navitem" href="">Contacto</a></li>
-        <li><a class="navitem" href="">Registrarme</a></li>
-        <li><a class="navitem" href="">Ingresar</a></li>
+        <li><a class="navitem" href="register.html">Registrarme</a></li>
+        <li><a class="navitem" href="login.html">Ingresar</a></li>
       </ul>
     </nav>
     <main>
       <form action="login.html" method="POST">
         <h2 class="hform white">Iniciar sesión</h2>
         <label class="white" for="email">Email</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" />
 
         <label class="white" for="password">Contraseña</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" />
+
+        <div class="container4">
+          <input type="checkbox" name="recordar" id="recordar" />
+          <label class="white" for="recordar"
+            >Recordar datos</label
+          >
+          
+        </div>
+
         <button class="formbutton" type="submit">Ingresar</button>
       </form>
     </main>

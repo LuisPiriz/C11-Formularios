@@ -21,7 +21,8 @@ body {
     z-index: 10;
 }
 .logo {
-    margin: auto;
+    display: flex;
+    align-items: center;
 }
 .blue-white {
     background-color: #00669F;
@@ -38,10 +39,12 @@ h1 {
 nav {
     background-color: black;
     margin-bottom: 50px;
+    
 }
 ul {
     display: flex;
     padding: 5px;
+    justify-content: end;
 }
 .navitem{
     color: white !important;
@@ -125,16 +128,17 @@ footer{
     position: absolute;
     right: 20px;
     align-self: center;
-    width: 10%;
+    width: 80px;
 }
 
 form {
     background-color: #00669F;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     padding-inline: 50px;
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 label {
     margin-top: 20px;
@@ -154,9 +158,27 @@ input {
     border-radius: 5px;
     font-weight: bold;
 }
+.container2 {
+    display: flex;
+    justify-content: space-between;
+}
+.container3 {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+.container4 {
+    margin-top: 20px;
+}
 @media screen and (max-width: 768px) {
     section {
         margin: 10px;
+    }
+    .github {
+        width: 10%;
+    }
+    form {
+        width: 60%;
     }
 }
 
@@ -170,5 +192,16 @@ input {
         align-self: center;
         width: 15%;
         margin-top: 5px;
+    }
+    form {
+        width: 80%;
+        padding-inline: 40px;
+    }
+    .container2 {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .container3 {
+        width: 100%;
     }
 }

@@ -17,30 +17,62 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <header>
       <p class="descuentos">Descuentos 20%</p>
     </header>
     <div class="loghead">
-        <a href="../index.html"><img class="logo" src="../img/logo 1.svg" height="65" alt="logo" /></a>
+      <a href="../index.html" class="logo"
+        ><img src="../img/logo 1.svg" height="65" alt="logo"
+      /></a>
       <h1 class="blue-white">Nombre de la tienda</h1>
     </div>
     <nav>
       <ul type="none">
         <li><a class="navitem" href="">Contacto</a></li>
-        <li><a class="navitem" href="">Registrarme</a></li>
-        <li><a class="navitem" href="">Ingresar</a></li>
+        <li><a class="navitem" href="register.html">Registrarme</a></li>
+        <li><a class="navitem" href="login.html">Ingresar</a></li>
       </ul>
     </nav>
     <main>
-      
+      <form action="login.html" method="POST">
+        <h2 class="hform white">Regístrate</h2>
+        <div class="container2">
+          <div class="container3">
+            <label class="white" for="name">Nombre</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="container3">
+            <label class="white" for="lastname">Apellido</label>
+            <input type="text" name="lastname" id="lastname" />
+          </div>
+        </div>
+
+        <label class="white" for="username">Nombre de usuario</label>
+        <input type="text" name="username" id="username" />
+
+        <label class="white" for="email">Email</label>
+        <input type="email" name="email" id="email" />
+
+        <label class="white" for="password">Contraseña</label>
+        <input type="password" name="password" id="password" />
+        <div class="container4">
+          <input type="checkbox" name="T&C" id="T&C" />
+          <label class="white" for="T&C"
+            >Acepto los términos y condiciones</label
+          >
+          
+        </div>
+
+        <button class="formbutton" type="submit">Registrarte</button>
+      </form>
     </main>
 
     <footer class="blue-white">
       <p class="footp">Todos los derechos reservados a FRONT END 1</p>
-      <img class="github" src="img/Vector.png" alt="" />
+      <img class="github" src="../img/Vector.png" alt="" />
     </footer>
   </body>
 </html>
